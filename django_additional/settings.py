@@ -136,7 +136,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 AUTH_USER_MODEL = 'accounts.User'
-# allauth setting
+
+# allauth settings
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend',
@@ -155,3 +156,5 @@ SOCIALACCOUNT_PROVIDERS = {
         }
     }
 }
+
+LOGIN_REDIRECT_URL = '/articles/'
