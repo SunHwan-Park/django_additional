@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     # pip
     'django_extensions',
     'bootstrap4',
+    'bootstrap_pagination',
 
     # django original
     'django.contrib.admin',
